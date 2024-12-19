@@ -1,0 +1,189 @@
+<?php
+session_start();
+
+// Establece permiso para acceder a otras páginas
+$_SESSION['permitido'] = true;
+?>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación del Desempeño Docente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            background-color: #388e3c; /* Verde Oscuro */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #b7e4c7;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+        background-color: #d6d5d5;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2d6a4f;
+            font-size: 2rem;
+        }
+
+        p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        p span {
+            font-weight: bold;
+            color: #2d6a4f;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: #2d6a4f;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #40916c;
+        }
+
+        /* Carrusel de Imágenes */
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 0;
+        }
+
+        .carousel img {
+            max-height: 400px;
+            margin: 0 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- <img src="img/loggo.png" alt=""> -->
+        <img src="img/venado.png" alt="Logo del Sistema de Evaluación Docente" width="200">
+    </header>
+  <!-- Contenido Principal -->
+  <div class="container">
+        <h1>Evaluación del Desempeño Docente</h1>
+        <p>
+            El sistema de evaluación docente busca ayudar a los profesores a mejorar su práctica en el aula, tomando como base la opinión <span>anónima</span> de los estudiantes, el personal directivo de los planteles y el punto de vista del propio docente.
+        </p>
+        <p>
+            Es importante que las opiniones se expresen con respeto y de manera constructiva que nos ayuden a lograr mejores profesores y, por lo tanto, una mayor calidad educativa.
+        </p>
+        <p>
+            Para acceder a la página y evaluar a tus profesores, registra tu número de cuenta y contraseña.
+        </p>
+        <div class="button-container">
+            <a href="registro.php" class="button">Alumno</a>
+            <!-- <a href="" class="button">Profesor</a> -->
+            <a href="admin.php" class="button">Administrador</a>
+        </div>
+     
+    </div>
+   
+    <!-- Carrusel de Imágenes -->
+    <div class="carousel">
+        <img src="img/event.jpg" alt="Imagen 1">
+        <img src="img/event2.jpg" alt="Imagen 2">
+        <img src="img/ivent3.jpg" alt="Imagen 3">
+        <img src="img/event4.jpg" alt="Imagen 3">
+
+       
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Perfil del Profesor. Todos los derechos reservados.</p>
+        <!-- <img src="../img/venado.png" alt="Logo del Sistema de Evaluación Docente" width="200"> -->
+    </footer>
+
+
+
+
+</body>
+</html>
+
+
+
+
