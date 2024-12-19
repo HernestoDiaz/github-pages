@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Navidad 2024!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #c0392b;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        main {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 500px;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Feliz Navidad 2024!</h1>
+        <p>La magia de la Navidad nos une</p>
+    </header>
+    <main>
+        <div class="card">
+            <h2>🎄 Ideas para Celebrar 🎄</h2>
+            <ul>
+                <li>Decora tu casa con luces y guirnaldas</li>
+                <li>Hornea galletas de jengibre con tu familia</li>
+                <li>Intercambia regalos con tus seres queridos</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>⛄ Recetas Navideñas ⛄</h2>
+            <p>¡Prueba un delicioso pavo navideño o un ponche de frutas!</p>
+        </div>
+        <div class="card">
+            <h2>✨ Frase del Año ✨</h2>
+            <p>"Que esta Navidad ilumine tu hogar y llene tu corazón de amor y alegría."</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Página de Navidad. Creada con ❤️ para compartir la alegría navideña. Visítanos en <a href="#">www.navidad2024.com</a></p>
+    </footer>
+</body>
+</html>
